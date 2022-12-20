@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header class="header">
+        <img src="img/logo.png" alt="trillo" class="logo" />
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Search " />
+          <button class="search__btn">
+            <svg class="search__icon">
+              <use xlink:href="img/main.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__box">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/main.svg#icon-bookmarks"></use>
+            </svg>
+            <span class="user-nav__notifications">0</span>
+          </div>
+
+          <div class="user-nav__box user-nav__messages">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/main.svg#icon-bubbles2"></use>
+            </svg>
+            <span class="user-nav__notifications">10</span>
+            <!-- gdf-->
+          </div>
+
+          <div class="user-nav__user user-nav__box">
+            <img
+              src="img/user.jpg"
+              alt="user photo"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">Mo Ahmed</span>
+          </div>
+        </nav>
+      </header>
+
+      <!-- END -->
+
+      <!-- CONTENT -->
+      <div class="content">
+        <div class="user-menu hidden">
+          <ul class="user-menu__list">
+            <li class="user-menu__option">Profile</li>
+            <li class="user-menu__option">Settings</li>
+            <li class="user-menu__option">Security</li>
+          </ul>
+        </div>
+        <div class="messages-box hidden">
+          <h2 class="list-name">Messages</h2>
+          <figure class="messages-box__mesg">
+            <blockquote class="messages-box__mesg__text">
+              I'AM READY. I'AM READY. I'AM READY. I'AM READY. I'AM READY. I'AM
+              READY. I'AM READY. I'AM READY. I'AM READY. I'AM READY. I'AM READY.
+              I'AM READY. I'AM READY. I'AM READY. I'AM READY. I'AM READY. I'AM
+              READY. I'AM READY. I'AM READY. I'AM READY. I'AM READY.
+            </blockquote>
+
+            <figcaption class="messages-box__mesg__sender">
+              <img
+                src="img/user-3.jpg"
+                alt="sender photo"
+                class="messages-box__mesg__sender__photo"
+              />
+              <span class="messages-box__mesg__sender__name">Alaa</span>
+              <span class="mesg-date">9.00 AM</span>
+            </figcaption>
+          </figure>
+
+          <figure class="messages-box__mesg">
+            <blockquote class="messages-box__mesg__text">
+              We've got it.
+            </blockquote>
+
+            <figcaption class="messages-box__mesg__sender">
+              <img
+                src="img/user-1.jpg"
+                alt="sender photo"
+                class="messages-box__mesg__sender__photo"
+              />
+              <span class="messages-box__mesg__sender__name">Afsha</span>
+              <span class="mesg-date">11.00 AM</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item__active">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/main.svg#icon-home"></use>
+                </svg>
+                <span>Hotel</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/main.svg#icon-aircraft-take-off"></use>
+                </svg>
+                <span>Flight</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/main.svg#icon-key"></use>
+                </svg>
+                <span>Car Rental</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/main.svg#icon-map2"></use>
+                </svg>
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+          <div class="footer-legal">&copy;2022 by Mo Ahmed</div>
+        </aside>
+        <!-- END -->
+
+        <!-- HOTEL-VIEW -->
+        <main class="hotel-view">
+          <div class="gallery">
+            <figure>
+              <img src="img/hotel-1.jpg" alt="hotel 1" class="gallery__photo" />
+            </figure>
+
+            <figure>
+              <img src="img/hotel-2.jpg" alt="hotel 2" class="gallery__photo" />
+            </figure>
+
+            <figure>
+              <img src="img/hotel-3.jpg" alt="hotel 3" class="gallery__photo" />
+            </figure>
+          </div>
+          <div class="overview">
+            <h1 class="overview__heading">Alexandria Hotel</h1>
+            <div class="overview__stars">
+              <svg class="overview__stars__icon">
+                <use xlink:href="img/main.svg#icon-star-full"></use>
+              </svg>
+              <svg class="overview__stars__icon">
+                <use xlink:href="img/main.svg#icon-star-full"></use>
+              </svg>
+              <svg class="overview__stars__icon">
+                <use xlink:href="img/main.svg#icon-star-full"></use>
+              </svg>
+              <svg class="overview__stars__icon">
+                <use xlink:href="img/main.svg#icon-star-full"></use>
+              </svg>
+              <svg class="overview__stars__icon">
+                <use xlink:href="img/main.svg#icon-star-full"></use>
+              </svg>
+            </div>
+            <div class="overview__location">
+              <svg class="overview__location__icon">
+                <use xlink:href="img/main.svg#icon-location"></use>
+              </svg>
+              <button class="btn-inline">Alexandria,Egypt</button>
+            </div>
+            <div class="overview__rating">
+              <div class="overview__rating__average">8.6</div>
+              <div class="overview__rating__count">429 votes</div>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="descreption">
+              <div class="paragraphs">
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae aspernatur nostrum ut amet ipsa earum enim eos
+                  dignissimos totam? Est eveniet veniam facere consequuntur,
+                  culpa aspernatur labore architecto tempora aliquid!
+                </p>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Explicabo, iure ducimus veniam quasi quis ipsam sunt quaerat
+                  ratione.
+                </p>
+              </div>
+              <ul class="services">
+                <li>Close to beach</li>
+                <li>24-Hour Guest Reception</li>
+                <li>Healthy Breakfast</li>
+                <li>Ample Wall Outlets</li>
+                <li>Free Wifi</li>
+                <li>Parking</li>
+                <li>Friendly First Contact</li>
+                <li>beautiful gardens and a wide stretch of beach</li>
+              </ul>
+              <div class="comments">
+                <p class="comments__count">
+                  Mo and 3 other friends recommend this hotel
+                </p>
+                <div class="comments__friends">
+                  <img
+                    src="img/user-3.jpg"
+                    alt="Friend 1"
+                    class="comments__friends__photo"
+                  />
+                  <img
+                    src="img/user-4.jpg"
+                    alt="Friend 2"
+                    class="comments__friends__photo"
+                  />
+                  <img
+                    src="img/user-5.jpg"
+                    alt="Friend 3"
+                    class="comments__friends__photo"
+                  />
+                  <img
+                    src="img/user-6.jpg"
+                    alt="Friend 4"
+                    class="comments__friends__photo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-1.jpg"
+                    alt="user photo"
+                    class="review__photo"
+                  />
+                  <div class="review__user__box">
+                    <p class="review__user-name">Mohamed Afsha</p>
+                    <p class="review__user-date">27 NOV,2020</p>
+                  </div>
+                  <span class="review__rating">85.45</span>
+                </figcaption>
+              </figure>
+
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-3.jpg"
+                    alt="user photo"
+                    class="review__photo"
+                  />
+                  <div class="review__user__box">
+                    <p class="review__user-name">Mahmoud alaa</p>
+                    <p class="review__user-date">27 NOV,2020</p>
+                  </div>
+                  <span class="review__rating">10.0</span>
+                </figcaption>
+              </figure>
+
+              <button class="btn-inline">Show All &rarr;</button>
+            </div>
+          </div>
+          <div class="call">
+            <h2 class="call__book-now">
+              We've got good news for you, we have 3 free rooms and
+              <span> 40% Discount</span> .
+            </h2>
+            <button class="call__btn">
+              <span class="call__btn__visible-1">Book Now</span>
+              <span class="call__btn__visible-2">
+                Hurry Up ,Only 3 rooms left
+              </span>
+            </button>
+          </div>
+        </main>
+        <!-- END hotel -->
+      </div>
+      <!--END content-->
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
