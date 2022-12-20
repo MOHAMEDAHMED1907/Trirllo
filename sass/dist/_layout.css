@@ -1,0 +1,171 @@
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-color);
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    margin: 0;
+  }
+}
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--underLine);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.content {
+  display: flex;
+}
+
+aside {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-view {
+  background-color: #fff;
+  flex: 1;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-grey-light-1);
+  padding: 4.5rem;
+  font-size: 1.4rem;
+}
+
+.descreption {
+  background-color: #fff;
+  flex: 0 0 65%;
+  margin-right: 4.5rem;
+  box-shadow: 0 2rem 5rem rgba(19, 8, 8, 0.08);
+  font-weight: 400;
+}
+
+.user-reviews {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paragraphs,
+.services,
+.comments {
+  border-bottom: var(--underLine);
+  padding: 3rem 4rem;
+  color: var(--color-grey-dark-2);
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+.services li {
+  flex: 0 0 50%;
+  margin-bottom: 0.7rem;
+  position: relative;
+  padding-left: 2rem;
+}
+.services li::before {
+  content: "";
+  background-color: var(--color-primary);
+  -webkit-mask-image: url(/img/SVG/arrow_forward_ios.svg);
+  -webkit-mask-size: cover;
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+}
+
+.comments {
+  display: flex;
+  padding: 4rem;
+  font-size: 1.3rem;
+  color: var(--color-grey-light-5);
+  align-items: center;
+}
+.comments__count {
+  margin-right: auto;
+}
+.comments__friends__photo {
+  box-sizing: content-box;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+.comments__friends__photo:not(:last-child) {
+  margin-right: -1.2rem;
+  border: 3px solid #fff;
+}
+
+.call {
+  padding: 4rem 0;
+  text-align: center;
+}
+.call__book-now {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+.call__book-now span {
+  color: var(--color-primary);
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: fantasy;
+}
+.call__btn {
+  font-size: 1.5rem;
+  width: 25rem;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  text-align: center;
+  padding: 2.4rem;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+  padding: 3rem;
+}
+.call__btn__visible-1 {
+  transition: all 0.2s;
+  position: absolute;
+  left: 38%;
+  top: 2rem;
+}
+.call__btn__visible-2 {
+  transition: all 0.2s;
+  position: absolute;
+  left: 15%;
+  top: -100%;
+}
+.call__btn:hover {
+  background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+}
+.call__btn:hover .call__btn__visible-1 {
+  top: -100%;
+}
+.call__btn:hover .call__btn__visible-2 {
+  top: 2rem;
+}
